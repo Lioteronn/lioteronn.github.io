@@ -7,7 +7,7 @@
     content: "";
     /* you can control opacity of noise  */
     opacity: .03;  
-    z-index: 1000;
+    z-index: 0;
     pointer-events: none;
     background: url("./noise.gif") ;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="../misc/noise/noise-effect.css">
     <title>Portofolio</title>
 </head>
+
 <body>
     <div class="noise"></div>
 
@@ -18,7 +20,8 @@
             <a href="https://www.instagram.com/ado1024sweetpotet/?hl=es" class="nav-icons">
                 <box-icon color="white" type="logo" name="instagram"></box-icon>
             </a>
-            <a href="https://twitter.com/ado1024imokenp?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="nav-icons">
+            <a href="https://twitter.com/ado1024imokenp?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                class="nav-icons">
                 <box-icon color="white" type="logo" name="twitter"></box-icon>
             </a>
             <a href="https://www.tiktok.com/@ado1024osenbei" class="nav-icons">
@@ -28,29 +31,58 @@
                 <box-icon color="white" type="logo" name="spotify"></box-icon>
             </a>
         </div>
-        <box-icon color="white" name='menu' class="nav-right"></box-icon>
+        <box-icon color="white" name="menu" class="nav-right"></box-icon>
     </nav>
 
-    <div class="main-title">
-        <h1>
-            <span class="text-stroke">ADO</span>
-            <br>
-            MUSIC
-        </h1>
-        <h2>
-            NUEVOS LANZAMIENTOS
-        </h2>
-    </div>
-
-    <div class="slider-carousel">
-        <div class="slider-container">
-            <div class="slider-card-one"></div>
-            <div class="slider-card-two"></div>
-            <div class="slider-card-three"></div>
+    <section class="main-wrapper">
+        <div class="main-title">
+            <h1>
+                <span class="text-stroke">ADO</span>
+                <br>
+                MUSIC
+            </h1>
+            <h2>
+                NUEVOS LANZAMIENTOS
+            </h2>
         </div>
-    </div>
+
+        <div class="slider-carousel">
+            <div class="slider-container">
+                <box-icon color="white" name="chevron-left" class="left-slider-button"></box-icon>
+                <div class="slider slider-card-one">
+                    <div class="slider-bg slider-bg-one"></div>
+                    <h1 class="text-stroke">ONE PIECE ALBUM</h1>
+                    <h2>RELEASED ON 2022</h2>
+                    <img src="../imgs/ado-onepiece.jpg" alt="">
+                    <button class="release-button release-button-one">
+                        <a href="https://open.spotify.com/intl-es/album/7Ixqxq13tWhrbnIabk3172">LISTEN ON SPOTIFY</a>
+                    </button>
+                </div>
+                <div class="slider slider-card-two">
+                    <div class="slider-bg slider-bg-two"></div>
+                    <h1 class="text-stroke">KYOUGEN ALBUM</h1>
+                    <h2>RELEASED ON 2022</h2>
+                    <img src="../imgs/ado-kyougen.jpg" alt="">
+                    <button class="release-button release-button-two">
+                        <a href="https://open.spotify.com/intl-es/album/4muEF5biWb506ZojGMfHb7">LISTEN ON SPOTIFY</a>
+                    </button>
+                </div>
+                <div class="slider slider-card-three">
+                    <div class="slider-bg slider-bg-three"></div>
+                    <h1 class="text-stroke">UTATTEMITA ALBUM</h1>
+                    <h2>RELEASED ON 2023</h2>
+                    <img src="../imgs/ado-utattemita.jpg" alt="">
+                    <button class="release-button release-button-three">
+                        <a href="https://open.spotify.com/intl-es/album/4muEF5biWb506ZojGMfHb7">LISTEN ON SPOTIFY</a>
+                    </button>
+                </div>
+                <box-icon color="white" name="chevron-right" class="right-slider-button"></box-icon>
+            </div>
+        </div>
+    </section>
 
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="../app.js"></script>
 </body>
+
 </html>
