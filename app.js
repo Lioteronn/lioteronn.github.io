@@ -57,3 +57,33 @@ leftSliderButton.addEventListener("click", function() {
 rightSliderButton.addEventListener("click", function() {
     moveSlider("right");
 });
+
+
+// HAMBURGER MENU
+
+const hamburgerOpen = document.querySelector(".nav-right");
+const hamburgerClose = document.querySelector(".hamburger-close");
+const hamburgerMenu = document.querySelector(".nav-hamburger");
+let isHamburgerOpen = false;
+
+function openHamburgerMenu() {
+    if (!isHamburgerOpen) {
+        hamburgerMenu.style.transform = "translateX(0)";
+        isHamburgerOpen = true;
+    }
+}
+
+function closeHamburgerMenu() {
+    if (isHamburgerOpen) {
+        hamburgerMenu.style.transform = "translateX(100%)";
+        isHamburgerOpen = false;
+    }
+}
+
+hamburgerOpen.addEventListener("click", function() {
+    openHamburgerMenu();
+});
+
+hamburgerClose.addEventListener("click", function() {
+    closeHamburgerMenu();
+});

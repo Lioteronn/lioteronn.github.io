@@ -15,11 +15,24 @@ a {
 }
 
 
+/* Remove scroll bars */
+
+html {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+
 /* Page body styling */
+
 body {
     background-image: url("https://cdn.monstercat.com/background-tile.webp");
     background-repeat: repeat;
     background-attachment: scroll;
+    overflow: hidden !important;
 }
 
 .main-wrapper {
@@ -223,6 +236,7 @@ body {
     top: 50%;
     transform: translateY(-50%);
     transform: scale(5);
+    cursor: pointer;
     z-index: 10;
 }
 
@@ -232,4 +246,67 @@ body {
 
 .right-slider-button {
     right: 30px;
+}
+
+
+/* Menu hamburgesa */
+.nav-hamburger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 320px;
+    padding: 20px;
+    background-color: rgb(27, 27, 27);
+    transform: translateX(100%);
+    transition: transform 0.6s ease;
+    z-index: 10000;
+}
+
+.hamburger-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    scale: 1.5;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.hamburger-links-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    list-style: none;
+}
+
+.hamburger-links-container h1 {
+    display: flex;
+    align-items: center;
+    font-family: Lexend;
+    font-size: 25px;
+    color: white;
+    gap: 10px;
+}
+
+.hamburger-links-container li:first-of-type {
+    margin-top: 15px;
+}
+
+.hamburger-links-container li {
+    display: flex;
+    font-family: Kalnia;
+    font-weight: bold;
+    color: white;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.hamburger-links-container li box-icon {
+    width: 18px;
+}
+
+.hamburger-links-container img {
+    height: 25px;
+    border-radius: 10px;
 }
